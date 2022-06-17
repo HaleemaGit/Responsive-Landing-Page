@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+#column-one-right button {
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  margin-left: 70%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.row-one .column-one image {
+  width: 20%;
+  height: 20%;
+}
+
+/* Container for flexboxes */
+.row-one {
+  display: flex;
+  flex-wrap: inherit;
+  background-image: url("bg-hero-desktop.svg");
+  color: hsl(208, 11%, 55%);
+  height: 600px;
+  background-color: hsl(193, 100%, 96%);
+}
+
+/* Create two equal columns */
+.column-one {
+  flex: 50%;
+  padding-bottom: 20px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-one {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+/* Container for flexboxes */
+.row-two {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.column-two {
+  flex: 50%;
+  padding: 20px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-two {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+/* Container for flexboxes */
+.row-three {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.column-three {
+  flex: 50%;
+  padding: 20px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-three {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+/* Container for flexboxes */
+.row-four {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.column-four {
+  flex: 50%;
+  padding: 20px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-four {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+/* Container for flexboxes */
+.row-five {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two equal columns */
+.column-five {
+  flex: 50%;
+  padding: 20px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-five {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+/* Container for flexboxes */
+.row-six {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column-six {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-six {
+    flex-direction: column;
+  }
+}
