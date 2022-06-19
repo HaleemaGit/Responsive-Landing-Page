@@ -27,7 +27,6 @@
           <b>Huddle</b>
         </h2>
         <h2>Build The Community Your Fans Will Love</h2>
-        <p>Do you want to build a community</p>
         <p>
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
