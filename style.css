@@ -2,15 +2,21 @@
   box-sizing: border-box;
 }
 
-body {
+p {
   font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+  color: black;
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
+  color: black;
 }
 
-#column-one-right button {
+#column-one-right img {
+  align-content: center;
+}
+.try-it {
   width: 120px;
   height: 35px;
   border-radius: 20px;
@@ -21,9 +27,14 @@ h2 {
   margin-bottom: 30px;
 }
 
-.row-one .column-one image {
-  width: 20%;
-  height: 20%;
+.get-started {
+  width: 350px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 /* Container for flexboxes */
@@ -34,8 +45,16 @@ h2 {
   color: hsl(208, 11%, 55%);
   height: 600px;
   background-color: hsl(193, 100%, 96%);
+  padding: 20px;
 }
 
+#huddle {
+  padding-top: 2%;
+  margin-bottom: 20%;
+}
+#column-one-left {
+  padding-right: 5%;
+}
 /* Create two equal columns */
 .column-one {
   flex: 50%;
@@ -47,6 +66,14 @@ h2 {
   .row-one {
     flex-direction: column;
     padding-bottom: 20px;
+    background-image: url("bg-hero-mobile.svg");
+    height: 1000px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  #huddle {
+    text-align: left;
   }
 }
 
@@ -54,12 +81,24 @@ h2 {
 .row-two {
   display: flex;
   flex-wrap: wrap;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 10px 10px hsl(193, 100%, 96%);
+}
+
+#grow-together {
+  padding-top: 10%;
 }
 
 /* Create two equal columns */
 .column-two {
   flex: 50%;
-  padding: 20px;
+  padding-top: 5%;
+  padding-left: 9%;
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -67,6 +106,19 @@ h2 {
   .row-two {
     flex-direction: column;
     padding-bottom: 20px;
+    height: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  #grow-together {
+    padding-right: 10%;
+  }
+
+  #grow-image img {
+    justify-content: center;
   }
 }
 
@@ -74,12 +126,25 @@ h2 {
 .row-three {
   display: flex;
   flex-wrap: wrap;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 10px 10px hsl(193, 100%, 96%);
 }
 
 /* Create two equal columns */
 .column-three {
   flex: 50%;
-  padding: 20px;
+  padding-top: 5%;
+  padding-left: 9%;
+}
+
+#flow-together {
+  padding-top: 10%;
+  padding-right: 5%;
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -87,6 +152,20 @@ h2 {
   .row-three {
     flex-direction: column;
     padding-bottom: 20px;
+    height: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  #flow-together {
+    padding-right: 10%;
+    margin-bottom: -50%;
+  }
+  #flow-conversation img {
+    justify-content: center;
+    margin-left: -10%;
+    margin-top: 17%;
   }
 }
 
@@ -94,12 +173,24 @@ h2 {
 .row-four {
   display: flex;
   flex-wrap: wrap;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 10px 10px hsl(193, 100%, 96%);
+}
+
+#your-users {
+  padding-top: 10%;
 }
 
 /* Create two equal columns */
 .column-four {
   flex: 50%;
-  padding: 20px;
+  padding-top: 5%;
+  padding-left: 9%;
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -107,6 +198,15 @@ h2 {
   .row-four {
     flex-direction: column;
     padding-bottom: 20px;
+    height: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  #your-users {
+    padding-right: 10%;
   }
 }
 
@@ -114,12 +214,21 @@ h2 {
 .row-five {
   display: flex;
   flex-wrap: wrap;
+  height: 200px;
+  width: 600px;
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-right: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 10px 10px hsl(193, 100%, 96%);
+  text-align: center;
+  padding-top: 1%;
 }
 
 /* Create two equal columns */
 .column-five {
-  flex: 50%;
-  padding: 20px;
+  flex: 100%;
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -127,13 +236,70 @@ h2 {
   .row-five {
     flex-direction: column;
     padding-bottom: 20px;
+    height: 200px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    justify-items: center;
+    text-align: center;
+  }
+
+  #build-community {
+    padding-top: 5%;
+    font-size: large;
   }
 }
 
 /* Container for flexboxes */
 .row-six {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
+  color: hsl(193, 100%, 96%);
+  height: 300px;
+  background-color: hsl(192, 100%, 9%);
+  padding-top: 1%;
+  font-size: small;
+}
+
+.row-six p {
+  color: white;
+}
+.row-six h2 {
+  color: white;
+}
+
+#white-huddle {
+  padding-top: 1%;
+  margin-bottom: 10%;
+}
+
+#contact img {
+  margin-right: 2%;
+}
+
+#last-column-paragraph img {
+  margin-right: 2%;
+}
+
+#last-column-paragraph {
+  margin-bottom: 40%;
+}
+
+#about-us {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+#career {
+  margin-top: 5%;
+}
+
+#ending {
+  margin-top: 5%;
+}
+
+footer {
+  font-size: smaller;
 }
 
 /* Create four equal columns */
@@ -146,5 +312,33 @@ h2 {
 @media screen and (max-width: 600px) {
   .row-six {
     flex-direction: column;
+    padding-bottom: 20px;
+    height: 700px;
+    margin-left: 5%;
+    justify-items: center;
+  }
+
+  #about-us {
+    margin-top: 1%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+  }
+
+  #career {
+    margin-top: -26.2%;
+  }
+
+  #ending {
+    margin-top: -15%;
+    text-align: center;
+  }
+
+  #last-column-paragraph {
+    margin-bottom: 3%;
+    text-align: center;
+  }
+
+  footer {
+    margin-bottom: -15%;
   }
 }
